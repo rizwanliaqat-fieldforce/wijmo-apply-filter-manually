@@ -1,0 +1,7 @@
+<wj-flex-grid #grid (initialized)="initGrid(grid)" [itemsSource]="source">
+  <wj-flex-grid-filter (initialized)="initFilter(filter)" #filter></wj-flex-grid-filter>
+</wj-flex-grid><br><br>
+<button (click)="byCondition(filter)">Fitler by condition</button>&nbsp;
+<button (click)="byValue(filter, 'country')">Filter by value</button>&nbsp;
+<button (click)="byCollectionView(grid)">Fitler using CollectionView</button>&nbsp;
+<button (click)="clearFilter(filter)">Clear Filter</button>
